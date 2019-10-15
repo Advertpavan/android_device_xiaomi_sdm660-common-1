@@ -150,7 +150,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_skip_validate=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.video.disable.ubwc=1 \
-    video.disable.ubwc=1
+    video.disable.ubwc=1 \
+    vendor.display.enable_default_color_mode=0
 
 # enable FIFO scheduling for UI and Render threads by default
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -257,6 +258,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=22,20 \
     ro.vendor.use_data_netmgrd=true \
     telephony.lteOnCdmaDevice=1 \
+    persist.vendor.radio.data_ltd_sys_ind=1 \
+    persist.vendor.radio.data_con_rprt=1 \
     ro.telephony.iwlan_operation_mode=legacy
 
 # Rendering

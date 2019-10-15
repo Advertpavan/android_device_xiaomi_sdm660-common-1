@@ -236,6 +236,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/bt_firmware:/bt_firmware \
     /mnt/vendor/persist:/persist
 
+TARGET_COPY_OUT_PRODUCT := system/product
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
@@ -263,10 +264,6 @@ else
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 endif
 BOARD_HAS_LARGE_FILESYSTEM := true
-
-# Power
-TARGET_HAS_NO_WLAN_STATS := true
-TARGET_HAS_NO_POWER_STATS := true
 
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
