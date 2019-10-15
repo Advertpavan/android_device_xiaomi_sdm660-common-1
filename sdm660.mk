@@ -43,8 +43,8 @@ PRODUCT_PACKAGES += \
     camera.sdm660_shim
 
 # RRO
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+#PRODUCT_ENFORCE_RRO_TARGETS := \
+#    framework-res
 
 # Boot animation
 TARGET_BOOTANIMATION_SIZE := 1080p
