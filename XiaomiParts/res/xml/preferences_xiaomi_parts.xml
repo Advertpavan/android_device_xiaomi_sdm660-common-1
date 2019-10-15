@@ -36,23 +36,23 @@
             android:key="device_kcal"
             android:persistent="false"
             android:title="@string/device_kcal_title">
+            android:icon="@drawable/ic_color">
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetClass="org.lineageos.settings.kcal.KCalSettingsActivity"
-                android:targetPackage="org.lineageos.settings.kcal"
-                android:icon="@drawable/ic_color" />
+                android:targetPackage="org.lineageos.settings.kcal" />
         </Preference>
 
         <Preference
             android:key="device_doze"
             android:persistent="false"
             android:summary="@string/advanced_doze_summary"
-            android:title="@string/ambient_display_xiaomi">
+            android:title="@string/ambient_display_xiaomi"
+            android:icon="@drawable/ic_doze">
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity"
-                android:targetPackage="org.lineageos.settings.doze" 
-                android:icon="@drawable/ic_doze" />
+                android:targetPackage="org.lineageos.settings.doze" />
         </Preference>
     </PreferenceCategory>
 
